@@ -1,0 +1,321 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0260FF; /* Changed to blue */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0260FF; /* Main blue color */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #024CAF; /* Slightly darker blue on hover */
+}
+
+footer {
+    background-color: #024CAF; /* Darker blue for footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    background-color: #0260FF; /* Blue background for main content */
+    padding: 20px;
+    margin-bottom: 70px; /* Increased space for footer */
+}
+
+/* Form Styles */
+form {
+    background-color: #024CAF; /* Changed form background to darker blue */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white; /* White text for labels */
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #ffffff; /* White border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #024CAF; /* Dark blue for buttons */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #01327A; /* Darker blue on hover */
+}
+
+/* Error and Success Messages */
+.error-message {
+    color: #FF0000; /* Red for error message */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.success-message {
+    color: #00FF00; /* Green for success message */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: white; /* White for register link */
+}
+
+.register-link a {
+    color: #ffffff; /* White color for register link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0260FF; /* Blue background for hero */
+    padding: 40px 20px;
+    border-bottom: 4px solid #024CAF; /* Dark blue border */
+}
+
+.hero-text {
+    max-width: 50%;
+    color: white; /* White text for hero section */
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    color: #FFFFFF; /* White color for heading */
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #FFFFFF; /* White color for paragraph */
+    margin-bottom: 30px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #024CAF; /* Dark blue for primary button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary {
+    background-color: #01327A; /* Darker blue for secondary button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #01327A; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+    background-color: #024CAF; /* Dark blue for features section */
+    padding: 40px 20px;
+    text-align: center;
+    color: white; /* White text for features */
+}
+
+.features h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white; /* White color for features heading */
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #01327A; /* Darker blue for feature cards */
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: white; /* White text inside cards */
+}
+
+.feature-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.feature-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white; /* White color for card title */
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #ffffff; /* White color for card text */
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #01327A; /* Dark blue for call to action */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white; /* White text */
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: white; /* White text */
+}
+
+.cta a {
+    background-color: white;
+    color: #01327A; /* Darker blue */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: #024CAF; /* Darker blue on hover */
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text, .hero-image {
+        max-width: 100%;
+    }
+
+    .feature-cards {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
+    header nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
